@@ -1,0 +1,110 @@
+.box {
+  width: 100%;
+  height: auto; /* Changed to auto for better responsiveness */
+  background-color: #f4f4f4;
+  padding: 20px 0; /* Added padding for better spacing on smaller screens */
+}
+
+.contain {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse; /* Stack content on smaller screens */
+  overflow: hidden;
+  align-items: center;
+  margin: auto;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px; /* Added margin for spacing */
+}
+
+.contant {
+  text-align: center; /* Centered text for better mobile view */
+  margin-top: 20px; /* Added margin for spacing */
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 10px; /* Added margin for better spacing */
+}
+
+/* Responsive button adjustments */
+.btn {
+  background-color: #228B22;
+ 
+  /* background-color: #EA4C89; */
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #F082AC;
+}
+
+
+
+/* Adjustments for tablets and larger screens */
+@media (min-width: 768px) {
+  .contain {
+      flex-direction: row; /* Restore horizontal layout on larger screens */
+  }
+
+  .image {
+      width: 50%;
+      margin-top: 0; /* Remove margin for better alignment */
+  }
+
+  .contant {
+      width: 50%;
+      text-align: left; /* Align text to the left on larger screens */
+      margin-top: 0; /* Remove margin for better alignment */
+  }
+
+  .btn {
+      padding: .75rem 3rem;
+      font-size: 1.25rem;
+  }
+}
+
+/* Additional styles for large screens */
+@media (min-width: 1024px) {
+  .box {
+      height: 80vh; /* Restore fixed height on larger screens */
+  }
+
+  .bold {
+      font-size: 2.5rem; /* Increase font size for larger screens */
+  }
+
+  .btn {
+      padding: .75rem 3.5rem;
+      font-size: 1.5rem;
+  }
+}

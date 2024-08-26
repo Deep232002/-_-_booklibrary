@@ -1,0 +1,89 @@
+.navbar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between; /* Adjusted to space items between edges */
+    padding: 10px 20px;
+    align-items: center;
+    background-color: #228B22;
+    overflow: hidden;
+}
+
+.logo {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5em; /* Adjusted for better scaling on smaller screens */
+}
+
+.logo_icon {
+    color: white;
+    font-size: 1.8em; /* Adjusted for better scaling */
+}
+
+.icon {
+    font-size: 1.3em; /* Adjusted for better scaling */
+}
+
+.search_box {
+    width: 40%;
+    min-width: 200px; /* Ensures minimum width on smaller screens */
+    max-width: 500px; /* Restricts maximum width on larger screens */
+    padding: 1px 0;
+    overflow: hidden;
+}
+
+.input_box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    padding: 0 5px;
+    background-color: white;
+    border: none;
+}
+
+.input_box input {
+    width: 85%; /* Adjusted to fit better with the search icon */
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.input_box .search {
+    font-size: 1.5em;
+    background-color: white;
+    border: none;
+    color: gray;
+}
+
+.search_button {
+    border: none;
+    background-color: white;
+    padding: 5px;
+    cursor: pointer; /* Adds a pointer cursor on hover */
+}
+
+.menu {
+    display: flex;
+    gap: 15px; /* Adds space between icons */
+}
+
+.menu .icon {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search_box {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .menu {
+        margin-top: 10px;
+    }
+}

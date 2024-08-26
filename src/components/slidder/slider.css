@@ -1,0 +1,63 @@
+/* src/ImageSlider.css */
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    position: relative;
+    width: 70%;
+    max-width: 960px;
+  }
+ 
+  .slider {
+      display: flex;
+      overflow: hidden;
+      width: 100%;
+      transition: transform 2s ease; 
+      align-items: center;
+    }
+  .slider-image {
+    flex: 1;
+    margin: 0 10px;
+    min-width: 25%;
+    transition: transform 2s ease;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+  }
+  
+  .slider-image-center {
+    /* transform: scale(1.2); Increase the size of the center image */
+    z-index: 1; /* Ensure the center image is on top */
+    min-width: 35%;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  .slider-button {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  
+  .slider-button:first-of-type {
+    left: 10px;
+  }
+  
+  .slider-button:last-of-type {
+    right: 10px;
+  }
+  /* src/ImageSlider.css */
+.slider-button {
+    display: none; /* This hides the arrow buttons */
+  }
+  

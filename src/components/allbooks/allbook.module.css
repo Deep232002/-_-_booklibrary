@@ -1,0 +1,70 @@
+.book_container {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.heading {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center; /* Center the heading for better presentation on smaller screens */
+}
+
+.card_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Stack the .book and .catogery vertically on smaller screens */
+    gap: 20px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.book {
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.catogery {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Responsive styles for tablets and larger screens */
+@media (min-width: 768px) {
+    .card_container {
+        flex-direction: row; /* Align .book and .catogery side by side on larger screens */
+    }
+
+    .book {
+        width: 75%; /* Adjust the width of the .book section on larger screens */
+    }
+
+    .catogery {
+        width: 25%; /* Adjust the width of the .catogery section on larger screens */
+    }
+}
+
+/* Additional styles for large screens */
+@media (min-width: 1024px) {
+    .heading {
+        font-size: 2.5rem; /* Increase the font size of the heading on large screens */
+    }
+
+    .book {
+        width: 80%; /* Adjust the width of the .book section on large screens */
+    }
+
+    .catogery {
+        width: 20%; /* Adjust the width of the .catogery section on large screens */
+    }
+}
+
+/* Hide scrollbars */
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar width */
+    height: 0px; /* Remove scrollbar height */
+}
